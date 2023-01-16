@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Facilities</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <div class="container">
+        <!--Logo Picture on the Page-->
+        <header>
+            <img src="markhor-hotels.png" alt="Logo for Markhor Hotels">
+        </header>
+        <!--Nav Items/Pages in the Nav Bar-->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="booknow.html">Book Now</a>
+            <a href="services.html">Services</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+        <!--Introductory Paragraph Description on the Booking Page-->
+        <main>
+            <h1>Discover our Suites</h1>
+            <p>Designed by Zaha Hadid, every room at MH Dubai, whether you choose a midnight or desert colour scheme, is designed to provide you with the ultimate in relaxation and comfort.</p>
+            <p>A tribute to those who appreciate understated luxury and design these expensive suites will spoil you with an incredibly cosy super king-size bed, along with a comfortable sofa-bed for the little ones to snuggle up in.</p>
+        </main>
+        <!--Code for the format of the Services animated content-->
+        <div class="container1">
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/mh.auraroom.png)"></div>
+                
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/mh.room-symbol.png">
+                        </div>
+
+                        <div class="subtitle">
+                            AURA ROOM
+                            <p>Book from £173/Night</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/mh.viberoom.png)"></div>
+                
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/mh.room-symbol.png">
+                        </div>
+
+                        <div class="subtitle">
+                            VIBE ROOM
+                            <p>Book from £173/Night</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/mh.chichsuite.png)"></div>
+                
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/mh.room-symbol.png">
+                        </div>
+
+                        <div class="subtitle">
+                            CHIC SUITE
+                            <p>Book from £173/Night</p>
+                        </div>
+                    </div>
+                </div>
+            
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<!--JavaScript Code for the animated content pictures-->
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+    
+<footer>
+    <p>The Opus by Omniyat, Al Amal Street, Business Bay 333371 Dubai, Markhor Hotels Co. - Copyright 2021©</p>
+</footer>
+
+</html>

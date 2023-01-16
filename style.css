@@ -1,0 +1,89 @@
+html {
+    height: 100%;
+}
+
+/* Background Styling for the HomePage */
+body {
+    background-color: #2f3035;
+    background-image: url(images/m-hotels.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Styling & Size for the page */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+/* Styling of the Hotel Logo */
+header {
+    font-size: 44px;
+    height: 105px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+/*Nav Bar Styling*/
+nav {
+    background-color: rgb(0, 0, 0, 0.400);
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+main {
+    height: 250px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.705);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+
+a {
+    color: white;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+footer p {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(198, 198, 198)
+}

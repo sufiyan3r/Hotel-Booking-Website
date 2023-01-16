@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Facilities</title>
+    <link rel="stylesheet" href="animation.css">
+</head>
+<body>
+
+    <main>
+        <h1>SERVICES & FACILITIES</h1>
+        <p>We at Markhor Hotels strongly believe in encouraging the quality of life of each of our guests. Keeping that in mind, we offer you a spacious gym to stay fit and active even while on vacation, reinvigorating treatments at the spa, or the temperature-controlled pool to let all your worries fade away.</p>
+    </main>
+
+        <div class="container">
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/mh.spa.png)"></div>
+                
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/spa.symbol.png">
+                        </div>
+
+                        <div class="subtitle">
+                            There’s nothing more therapeutic than taking the time to slow down, relax and connect with your inner self. Our spa is a haven for pampering and self-care, both of which are much-needed in the life we lead today.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/mh.gym.png)"></div>
+                
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/gym.symbol.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Take advantage of 650 m2 of space that’s large enough to make you feel like you’re working out on your own. Our ultramodern Technogym Biocircuit can create a personalised workout just for you.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/mh.pool.png)"></div>
+                
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/pool.symbol.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Whether you wish to work on your sun-kissed tan or just fancy a refreshing dip in the water overlooking Downtown Dubai, our rooftop pool is just the place for you.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+    
+<footer>
+    <p>The Opus by Omniyat, Al Amal Street, Business Bay 333371 Dubai, Markhor Hotels Co. - Copyright 2021©</p>
+</footer>
+
+</html>
